@@ -1,0 +1,66 @@
+# Audio Recorder and Transcription
+
+This project is a desktop application for recording, playing, and transcribing audio files. It uses PySide6 for the GUI and integrates a speech recognition service using the `transformers` library for transcription.
+
+## Features
+
+- Record audio and save as WAV files.
+- Load and play multiple audio files sequentially.
+- Transcribe audio files using a pre-trained model and display transcriptions.
+- Cache transcriptions to avoid duplicate processing.
+- Delete selected audio files and their transcriptions using the `DEL` key.
+
+## Requirements
+
+- Python 3.x
+- PySide6
+- pyaudio
+- ffmpeg (for audio playback)
+- torch
+- transformers
+- pydub
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/audiorecorder.git
+   cd audiorecorder
+   ```
+
+2. Install the required Python packages:
+   ```bash
+   pip install PySide6 pyaudio torch transformers pydub
+   ```
+
+3. Ensure `ffmpeg` is installed on your system. You can download it from [FFmpeg's official website](https://ffmpeg.org/download.html).
+
+## Usage
+
+1. Run the application:
+   ```bash
+   python AudioRecorder.py
+   ```
+
+2. Use the interface to:
+   - Record new audio files.
+   - Load existing audio files.
+   - Play selected audio files.
+   - View transcriptions in the text window.
+   - Delete selected audio files and their transcriptions using the `DEL` key.
+
+## Customization
+
+- Modify the `SpeechRecognitionService` class in `llmvoice.py` to integrate your preferred speech recognition API or model.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## Contact
+
+For questions or support, please contact [your email].
